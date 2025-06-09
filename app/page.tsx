@@ -37,7 +37,7 @@ export default function HomePage() {
 
       {/* Image background (scrolls & fades out) */}
       <motion.div
-        className="h-screen w-full bg-cover bg-center"
+        className="h-screen w-full bg-cover bg-center bg-[length:100%_auto] sm:bg-cover"
         style={{
           backgroundImage: `url("/GreetingsFromSF.jpg")`,
           opacity: fadeImageOpacity,
