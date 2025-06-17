@@ -21,13 +21,13 @@ export default function HomePage() {
       <div className="fixed top-8 w-full flex flex-col items-center z-20 pointer-events-none">
         <div className="bg-black/80 rounded-xl px-8 py-4 shadow pointer-events-auto">
           <h1
-            className="text-4xl md:text-5xl font-bold text-[#F8F8F8] text-center"
+            className="text-4xl md:text-5xl font-bold text-[#F9F6F3] text-center"
             style={{ fontFamily: "'Poiret One'" }}
           >
             Alyssa & Cody
           </h1>
           <h2
-            className="text-xl md:text-2xl font-medium text-[#F8F8F8] mt-2 text-center"
+            className="text-xl md:text-2xl font-light text-[#F9F6F3] mt-2 text-center"
             style={{ fontFamily: "'Noto Sans Devanagari', sans-serif" }}
           >
             September 20, 2025 · 5–8pm
@@ -37,27 +37,27 @@ export default function HomePage() {
 
       {/* Image background (scrolls & fades out) */}
       <motion.div
-        className="h-screen w-full bg-cover bg-center bg-[length:100%_auto] sm:bg-cover"
+        className="h-screen w-full bg-cover bg-center sm:bg-cover"
         style={{
           backgroundImage: `url("/GreetingsFromSF.jpg")`,
           opacity: fadeImageOpacity,
-          marginTop: "60px",
+          marginTop: "80px",
         }}
         initial={{ opacity: 1 }}
         animate={{ opacity: fadeImageOpacity }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 0.6}}
       />
 
       {/* RSVP section with sidebar */}
       <motion.div
-        className="py-12 px-6 flex flex-col lg:flex-row items-start lg:items-stretch justify-center bg-white relative z-10 -mt-[25vh] pt-[120px]"
+        className="py-12 px-6 flex flex-col lg:flex-row items-start lg:items-stretch justify-center bg-[#000000] relative z-10 -mt-[25vh] pt-[60px] max-w-full overflow-hidden"
         initial={{ opacity: 0 }}
         animate={{ opacity: fadeFormOpacity }}
         transition={{ duration: 0.3 }}
       >
         {/* Sidebar */}
         <aside className="w-full lg:w-1/3 mb-8 lg:mb-0 lg:mr-12">
-          <div className="bg-[#f3f3f3] p-6 rounded-lg shadow">
+          <div className="bg-[#F9F6F3] p-6 rounded-lg shadow">
             <h3
               className="text-2xl font-semibold text-[#01110B] mb-4"
               style={{ fontFamily: "'Poiret One', cursive" }}
@@ -101,6 +101,7 @@ export default function HomePage() {
             frameBorder="0"
             marginHeight={0}
             marginWidth={0}
+            style={{ borderColor: "#155703" }}
             className="rounded-lg border border-gray-800 shadow-md"
           >
             Loading…
