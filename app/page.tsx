@@ -28,9 +28,9 @@ export default function HomePage() {
           </h1>
           <h2
             className="text-xl md:text-2xl font-medium text-[#F8F8F8] mt-2 text-center"
-            style={{ fontFamily: "'Poiret One'" }}
+            style={{ fontFamily: "'Noto Sans Devanagari', sans-serif" }}
           >
-            September 20, 2025
+            September 20, 2025 · 5–8pm
           </h2>
         </div>
       </div>
@@ -41,28 +41,59 @@ export default function HomePage() {
         style={{
           backgroundImage: `url("/GreetingsFromSF.jpg")`,
           opacity: fadeImageOpacity,
-          marginTop: "60px", // soft margin under the fixed header
+          marginTop: "60px",
         }}
         initial={{ opacity: 1 }}
         animate={{ opacity: fadeImageOpacity }}
         transition={{ duration: 0.3 }}
       />
 
-      {/* RSVP form fades in */}
+      {/* RSVP section with sidebar */}
       <motion.div
-        className="py-12 px-6 flex flex-col items-center bg-white relative z-10 -mt-[25vh] pt-[120px]"
+        className="py-12 px-6 flex flex-col lg:flex-row items-start lg:items-stretch justify-center bg-white relative z-10 -mt-[25vh] pt-[120px]"
         initial={{ opacity: 0 }}
         animate={{ opacity: fadeFormOpacity }}
         transition={{ duration: 0.3 }}
       >
-        {/*<h2
-          className="text-3xl font-semibold text-[#155703] mb-6 mt-4"
-          style={{ fontFamily: "'Poiret One'" }}
-        >
-          RSVP
-        </h2>*/}
+        {/* Sidebar */}
+        <aside className="w-full lg:w-1/3 mb-8 lg:mb-0 lg:mr-12">
+          <div className="bg-[#f3f3f3] p-6 rounded-lg shadow">
+            <h3
+              className="text-2xl font-semibold text-[#01110B] mb-4"
+              style={{ fontFamily: "'Poiret One', cursive" }}
+            >
+              Venue Information
+            </h3>
+            <a
+              href="https://sparksocialsf.com/faq/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg text-[#155703] underline hover:text-[#0e3e02]"
+              style={{ fontFamily: "'Noto Sans Devanagari', sans-serif" }}
+            >
+              View Spark Social FAQ
+            </a>
 
-        <div className="w-full max-w-2xl">
+            <h3
+              className="text-2xl font-semibold text-[#01110B] mt-8 mb-4"
+              style={{ fontFamily: "'Poiret One', cursive" }}
+            >
+              Registry
+            </h3>
+            <a
+              href="https://www.zola.com/registry/alyssaandcodyoctober16"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-lg text-[#155703] underline hover:text-[#0e3e02]"
+              style={{ fontFamily: "'Noto Sans Devanagari', sans-serif" }}
+            >
+              Visit Our Registry
+            </a>
+          </div>
+        </aside>
+
+        {/* RSVP Form */}
+        <div className="w-full lg:w-2/3">
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLScbZi0cyhDrNKK4bv2IMj7RCskFyTP4K_38l-VeDTHvMoDHlw/viewform?embedded=true"
             width="100%"
@@ -77,31 +108,5 @@ export default function HomePage() {
         </div>
       </motion.div>
     </div>
-      );
-
-    {/* Registry Section */}
-<div className="py-12 px-6 flex flex-col items-center bg-white relative z-10">
-  <h2
-    className="text-3xl font-semibold text-[#155703] mb-4 text-center"
-    style={{ fontFamily: "'Poiret One', cursive" }}
-  >
-    Registry
-  </h2>
-  <p
-    className="text-lg text-[#155703] mb-6 max-w-xl text-center"
-    style={{ fontFamily: "'Poiret One', cursive" }}
-  >
-    Your presence is the best gift, but if you'd like to browse our registry, you can find it here:
-  </p>
-  <a
-    href="https://www.zola.com/registry/alyssaandcodyoctober16"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-block bg-[#155703] text-white font-medium px-6 py-3 rounded-full shadow transition hover:bg-[#0e3e02]"
-    style={{ fontFamily: "'Poiret One', cursive" }}
-  >
-    View Our Registry
-  </a>
-</div>
-
+  );
 }
