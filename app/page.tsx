@@ -77,5 +77,31 @@ export default function HomePage() {
         </div>
       </motion.div>
     </div>
-  );
+      );
+
+    {/* Registry Section */}
+<div className="py-12 px-6 flex flex-col items-center bg-white relative z-10">
+  <h2
+    className="text-3xl font-semibold text-[#155703] mb-4 text-center"
+    style={{ fontFamily: "'Poiret One', cursive" }}
+  >
+    Registry
+  </h2>
+  <p
+    className="text-lg text-[#155703] mb-6 max-w-xl text-center"
+    style={{ fontFamily: "'Poiret One', cursive" }}
+  >
+    Your presence is the best gift, but if you'd like to browse our registry, you can find it here:
+  </p>
+  <a
+    href="https://www.zola.com/registry/alyssaandcodyoctober16"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block bg-[#155703] text-white font-medium px-6 py-3 rounded-full shadow transition hover:bg-[#0e3e02]"
+    style={{ fontFamily: "'Poiret One', cursive" }}
+  >
+    View Our Registry
+  </a>
+</div>
+
 }
