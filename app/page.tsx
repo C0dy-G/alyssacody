@@ -37,11 +37,11 @@ export default function HomePage() {
 
       {/* Image background (scrolls & fades out) */}
       <motion.div
-        className="h-screen w-full bg-cover bg-center sm:bg-cover"
+        className="h-screen w-full bg-contain bg-center sm:bg-cover bg-no-repeat"
         style={{
           backgroundImage: `url("/GreetingsFromSF.jpg")`,
           opacity: fadeImageOpacity,
-          marginTop: "80px",
+          marginTop: "-60px",
         }}
         initial={{ opacity: 1 }}
         animate={{ opacity: fadeImageOpacity }}
@@ -50,14 +50,15 @@ export default function HomePage() {
 
       {/* RSVP section with sidebar */}
       <motion.div
-        className="py-12 px-6 flex flex-col lg:flex-row items-start lg:items-stretch justify-center bg-[#000000] relative z-10 -mt-[25vh] pt-[60px] max-w-full overflow-hidden"
+        className="py-12 px-6 flex flex-col lg:flex-row items-start lg:items-stretch justify-center relative z-10 -mt-[33vh] pt-[-40px] max-w-full overflow-hidden"
         initial={{ opacity: 0 }}
         animate={{ opacity: fadeFormOpacity }}
         transition={{ duration: 0.3 }}
       >
         {/* Sidebar */}
         <aside className="w-full lg:w-1/3 mb-8 lg:mb-0 lg:mr-12">
-          <div className="bg-[#F9F6F3] p-6 rounded-lg shadow">
+         <div className="bg-black p-4 rounded-lg border border-[#155703]">
+           <div className="bg-[#F9F6F3] p-6 rounded-lg shadow">
             <h3
               className="text-2xl font-semibold text-[#01110B] mb-4"
               style={{ fontFamily: "'Poiret One', cursive" }}
@@ -89,6 +90,7 @@ export default function HomePage() {
             >
               Visit Our Registry
             </a>
+          </div>
           </div>
         </aside>
 
