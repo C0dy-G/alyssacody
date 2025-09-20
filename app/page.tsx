@@ -94,21 +94,24 @@ export default function HomePage() {
           </div>
         </aside>
 
-        {/* RSVP Form */}
-        <div className="w-full lg:w-2/3">
-          <iframe
-            src="https://docs.google.com/forms/d/e/1FAIpQLScbZi0cyhDrNKK4bv2IMj7RCskFyTP4K_38l-VeDTHvMoDHlw/viewform?embedded=true"
-            width="100%"
-            height="1260"
-            frameBorder="0"
-            marginHeight={0}
-            marginWidth={0}
-            style={{ borderColor: "#155703" }}
-            className="rounded-lg border border-gray-800 shadow-md"
-          >
-            Loading…
-          </iframe>
+        {/* without RSVP form */}
+               <div className="w-full lg:w-2/3">
+          <div className="bg-black p-4 rounded-lg border border-[#155703]">
+            <div className="bg-[#F9F6F3] p-6 rounded-lg shadow">
+              <p
+                className="text-lg text-[#01110B]"
+                style={{ fontFamily: "'Noto Sans Devanagari', sans-serif" }}
+              >
+                We are so excited to have you come celebrate with us! <br /><br />
+                Food and drinks will be provided, with a variety of options to accommodate different dietary needs. <br /><br />
+                We can't wait to see you there! <br /><br />  
+                Please reach out to Alyssa or Cody for reservation changes.
+              </p>
+            </div>
+          </div>
+          <div className="h-80"></div>
         </div>
+       
       </motion.div>
     </div>
   );
