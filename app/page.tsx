@@ -105,7 +105,10 @@ export default function HomePage() {
                 We are so excited to have you come celebrate with us! <br /><br />
                 Food and drinks will be provided, with a variety of options to accommodate different dietary needs. <br /><br />
                 We can't wait to see you there! <br /><br />  
-                Please reach out to Alyssa or Cody for reservation changes.
+                Please reach out to Alyssa or Cody for reservation changes.<br /><br />  
+                Spark Social - Double Decker Bus 
+                601 Mission Bay Blvd North 
+                San Francisco, CA 94158
               </p>
             </div>
           </div>
